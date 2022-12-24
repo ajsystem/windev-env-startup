@@ -8,7 +8,7 @@ install_shell() {
 
     curl -L http://install.ohmyz.sh | sh
     sudo chsh -s /usr/bin/zsh ${USER}
-    wget https://gist.githubusercontent.com/ajsystem/d63dd73fc6f56e8f9de5723bf5b4e83d/raw/27fd82c14789074ffe00fb5aa3240117c94470c7/zshrc -O ~/.zshrc
+    wget https://raw.githubusercontent.com/ajsystem/windev-env-startup/master/misc/zshrc -O ~/.zshrc
 }
 
 install_devtools() {
