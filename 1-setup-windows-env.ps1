@@ -50,7 +50,7 @@ function Install-PowerShellModule {
 Install-Chocolatey
 
 # Install basic packages
-# Packages from https://chocolatey.org/
+# Packages from https://community.chocolatey.org/packages
 Install-FromChocolatey 'git'
 Install-FromChocolatey 'vscode'
 Install-FromChocolatey 'postman'
@@ -59,8 +59,8 @@ Install-FromChocolatey 'putty.install'
 Install-FromChocolatey 'filezilla'
 Install-FromChocolatey 'firacodenf'
 Install-FromChocolatey 'heidisql'
-Install-FromChocolatey 'pgadmin4'
 Install-FromChocolatey 'devtoys'
+Install-FromChocolatey 'powertoys'
 
 WRITE-Host "All packages installed"
 WRITE-Host "git --global configuration steps"

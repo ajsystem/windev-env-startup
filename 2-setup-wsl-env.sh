@@ -31,7 +31,7 @@ install_devtools() {
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]
     then
-        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
     fi
 }
 
@@ -53,6 +53,8 @@ install_git() {
     git config --global mergetool.vscode.cmd 'code --wait $MERGED'
     git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
     git config --global credential.helper '/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe'
+    git config --global alias.stats=shortlog -sn --all --no-merges
+    git config --global alias.tree=log --all --graph --decorate --oneline
     echo '.gitconfig settings saved!'
 }
 

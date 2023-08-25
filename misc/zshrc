@@ -139,3 +139,6 @@ load-nvmrc
 
 # Python pip
 export PATH="$PATH:/home/${USER}/.local/bin"
+
+# Dynamic WSL HOST IP
+export WSLIP=$(hostname -I)
